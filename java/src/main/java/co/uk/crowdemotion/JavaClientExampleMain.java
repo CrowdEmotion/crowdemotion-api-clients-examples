@@ -1,8 +1,5 @@
 package co.uk.crowdemotion;
 
-import io.swagger.client.ApiClient;
-import io.swagger.client.ApiException;
-import io.swagger.client.api.ResearchApi;
 import io.swagger.client.model.Research;
 
 import java.util.List;
@@ -19,14 +16,10 @@ public class JavaClientExampleMain {
 
         apiClient.addDefaultHeader("Authorization", API_TOKEN);
 
-//         It is not supported in the current Swagger implementation yet
+//         It is not supported in the current implementation
 //         apiClient.setApiKey(API_TOKEN);
 
         System.out.println("API BASE PATH: " + apiClient.getBasePath());
-
-        for (String key : apiClient.getAuthentications().keySet()) {
-            System.out.println("Authentication "+key+": "+apiClient.getAuthentications().get(key).toString());
-        }
 
         ResearchApi researchApi = new ResearchApi(apiClient);
 
