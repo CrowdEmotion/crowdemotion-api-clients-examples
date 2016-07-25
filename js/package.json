@@ -1,0 +1,6 @@
+{
+  "name": "baz",
+  "dependencies": {
+    "crowdemotion-api-client-js": "file:crowdemotion-api-client-js"
+  }
+}
