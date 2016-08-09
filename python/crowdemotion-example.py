@@ -27,7 +27,7 @@ print("\n\n>>> FaceVideo upload example: \n")
 facevideo_api = crowdemotion_api_client_python.FaceVideoApi()
 facevideo_api_response = None
 try:
-    facevideo_path = '/Users/ipeluffo/Development/crowdemotion/docs/misc/video.mp4'
+    facevideo_path = '/path/to/video'
     facevideo_api_response = facevideo_api.facevideo_post(filename=facevideo_path, sandbox=True, process_video=True)
     pprint(facevideo_api_response)
 except ApiException as e:
